@@ -1,0 +1,152 @@
+button {
+	font-family: 'Poppins', sans-serif;
+}
+.mslide {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 77vh;
+	align-items: center;
+}
+.intro {
+	flex: 1;
+}
+.intro-text h1, h2{
+    text-transform: capitalize;
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text h2{
+	font-size: 30px !important;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-basic {
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 10px 10px 10px 10px;
+}
+.cta-basic:hover{
+    
+    background: white;
+    filter: drop-shadow(0px 3px 3px gray);
+    transition: 0.5s;
+}
+.cta-custom {
+	background: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 10px 10px 10px 10px;
+}
+.cta-custom:hover{
+    background: #9c5495;
+    filter: drop-shadow(0px 3px 3px gray);
+    transition: 0.5s;
+
+}
+.cta-report {
+	background: #ff5d5d;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	
+	margin: 10px 10px 10px 10px;
+}
+.cta-report:hover{
+    background: rgb(161, 78, 78);
+    filter: drop-shadow(0px 3px 3px gray);
+    transition: 0.5s;
+	
+}
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px rgb(95, 95, 95));
+	animation: drop 8s infinite;
+}
+
+@keyframes drop {
+	0%{
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	20% {
+		transform: translateY(0px);
+		opacity: 1;
+		transform: scaleX(1);
+	}
+	40%{
+		opacity: 0.5;
+	}
+	50%{
+		opacity: 1;
+		transform: scaleX(-1);
+	}
+	60% {
+		opacity: 0.5;
+	}
+	80%{
+		transform: translateY(0px);
+		opacity: 1;
+		transform: scaleX(1);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.container{
+		padding-bottom: 0px;
+	}
+	.mslide {
+		min-height: 50vh;
+		flex-direction: column;
+	}
+	.intro {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 5px 0px 0px 0px;
+	}
+	.cover{
+		height: 50vh;
+	}
+	.cover img {
+		height: 90%;
+	}
+	
+}

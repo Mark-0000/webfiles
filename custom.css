@@ -1,0 +1,66 @@
+.formcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    padding-bottom: 10px;
+    align-items: center;
+	color: #5f5f79;
+    font-size: large;
+  }
+  .formbox select, input{
+    font-size: 15px;
+  }
+  .formbox input[type = "submit"]{
+    border: 0;
+    background: none;
+    text-align: center;
+    background: #c36cbb;
+    padding: 5px 30px;
+    outline: none;
+	color: white;
+    font-size: 15px;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .formbox input[type = "submit"]:hover{
+    background: #9c5495;
+    filter: drop-shadow(0px 3px 3px gray);
+    transition: 0.5s;
+  }
+  
+  .formbox input[type = "text"]{
+      width: 50px;
+    background: none;
+    text-align: center;
+    border: 2px solid #c36cbb;
+    outline: none;
+    color: #5f5f79;
+    border-radius: 20px;
+    transition: 0.25s;
+  }
+  .formbox input[type = "text"]:focus{
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid #c36cbb;
+    filter: drop-shadow(0px 2px 2px gray);
+  }
+.stext{
+    color: red;
+}
+select{
+    background: none;
+    border: 2px solid #5f5f79;
+    color: #5f5f79;
+    padding: 2px;
+}
+select:focus{
+    transition: 0.5s;
+    border: 2px solid #c36cbb;
+}
+select:hover{
+    cursor: pointer;
+}
+option:first-child{
+	display: none;
+}

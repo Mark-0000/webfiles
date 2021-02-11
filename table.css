@@ -1,0 +1,86 @@
+.content table{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    animation: drop 1.5s ease;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 15px 15px 0 0;
+    table-layout: fixed;
+    text-align: left;
+    margin-left: 10px;
+    color: #5f5f79;
+}
+table thead{
+    background-color: #5f5f79;
+    color: white;
+}
+thead th{
+    height: 50px;
+    padding-left: 10px;
+}
+tbody tr td{
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+tbody tr:nth-child(even){
+    background: rgba(0, 0, 0, 0.04);
+}
+tbody tr:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(255, 233, 201);
+}
+.btn-report{
+    margin: 0%;
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+    height: 20px;
+    width: 20px;
+    background: rgb(255, 129, 129);
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+}
+.btn-report:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(255, 87, 87);
+}
+.btn-check{
+    margin: 0%;
+    color: rgb(78, 78, 78);
+    height: 20px;
+    width: 20px;
+    background: rgb(142, 255, 147);
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+}
+.btn-check:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(116, 201, 119);
+}
+.sbtn-chk, .sbtn-rep{
+    width: 25px;
+    height: 25px;
+    color: rgb(78, 78, 78);
+    border: 2px solid  rgb(78, 78, 78);
+}
+.sbtn-rep{
+    background-color: rgb(255, 129, 129);
+}
+.sbtn-chk{
+    background: rgb(142, 255, 147);
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
